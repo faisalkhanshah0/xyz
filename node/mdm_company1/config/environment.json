@@ -1,0 +1,5 @@
+{
+    "production": false,
+    "stage": false,
+    "test": true    
+}
