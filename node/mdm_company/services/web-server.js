@@ -32,8 +32,6 @@ function initialize() {
   });
 }
 
-module.exports.initialize = initialize;
-
 function close() {
   return new Promise((resolve, reject) => {
     httpServer.close((err) => {
@@ -47,4 +45,7 @@ function close() {
   });
 }
 
-module.exports.close = close;
+module.exports = {
+  initialize,
+  close
+}
